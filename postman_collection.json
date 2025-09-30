@@ -1,0 +1,12 @@
+{
+    "info": { "name": "Veiculos API", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json" },
+    "item": [
+      { "name": "GET /vehicles", "request": { "method": "GET", "url": "http://localhost:3000/vehicles" } },
+      { "name": "POST /vehicles", "request": { "method": "POST", "url": "http://localhost:3000/vehicles",
+          "body": { "mode": "raw", "raw": "{\n  \"placa\":\"NEW-1111\",\"marca\":\"Ford\",\"modelo\":\"Ka\",\"ano\":2019,\"cor\":\"Branco\"\n}" } } },
+      { "name": "PUT /vehicles/:id", "request": { "method": "PUT", "url": "http://localhost:3000/vehicles/1",
+          "body": { "mode": "raw", "raw": "{\n  \"placa\":\"ABC-1234\",\"marca\":\"Toyota\",\"modelo\":\"Corolla Altis\",\"ano\":2021,\"cor\":\"Branco\"\n}" } } },
+      { "name": "DELETE /vehicles/:id", "request": { "method": "DELETE", "url": "http://localhost:3000/vehicles/1" } }
+    ]
+  }
+  
